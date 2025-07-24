@@ -9,3 +9,35 @@
 }
 
 
+body {
+    margin: 0;
+}
+
+
+/* Header Style */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1920px;
+    margin: 0;
+    padding: 30px 230px;
+    background-color: #fff4e7;
+}
+
+.logo {
+    font-size: 45px;
+    font-weight: 600px;
+}
+
+.menu {
+    display: flex;
+    gap: 50px;
+}
+
+.menu > li {
+    list-style: none;
+    font-size: 18px;
+    font-weight: 400;
+}
