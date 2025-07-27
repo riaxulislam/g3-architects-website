@@ -1,94 +1,179 @@
+/* ------------------------------------
+   Google Fonts Import
+------------------------------------ */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-
-.work-sans-font {
+/* ------------------------------------
+   Base Styles
+------------------------------------ */
+body {
+  margin: 0;
   font-family: "Work Sans", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  background-color: #fff;
+  color: #000;
 }
 
-
-body {
-    margin: 0;
-}
-
-main {
-    
-}
-
-/* Header Style */
-
+/* ------------------------------------
+   Header Styles
+------------------------------------ */
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 1440px;
-    margin: auto;
-    padding: 0px 230px;
-    background-color: #fff4e7;
+  background-color: #fff4e7;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+  background-color: #fff4e7;
 }
 
 .logo {
-    font-size: 45px;
-    font-weight: 600px;
-    margin: 10px 0;
-    padding: 10px;
+  font-size: 45px;
+  font-weight: 700;
+  padding: 10px;
+  margin: 10px 0;
 }
 
-.logo > h3 {
-    margin: 0;
-    padding: 10px 0;
-}
-
+/* Navigation Menu */
 .menu {
-    display: flex;
-    gap: 50px;
+  display: flex;
+  gap: 50px;
+  padding: 0;
+  margin: 0;
 }
 
-.menu > li {
-    list-style: none;
-    font-size: 18px;
-    font-weight: 400;
-    cursor: pointer;
+.menu li {
+  list-style: none;
 }
 
-/* Banner Style */
+.menu li a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  color: black;
+  transition: color 0.3s ease;
+}
 
+.menu li a:hover {
+  color: #FF900E;
+}
+
+/* ------------------------------------
+   Banner Section
+------------------------------------ */
 .banner {
-    padding: 50px 0;
-    background-color: #fff4e7;
-    text-align: center;
-}
-
-.banner > div {
-    width: 1440px;
-    margin: auto;
+  padding: 50px 0;
+  background-color: #fff4e7;
+  text-align: center;
+  max-width: 1440px;
+  margin: auto;
 }
 
 .banner-title {
-    margin: 0;
-    margin-bottom: 20px;
-    font-size: 64px;
-    font-weight: 700;
+  margin: 0 0 20px 0;
+  font-size: 64px;
+  font-weight: 700;
 }
 
 .banner-description {
-    margin: auto;
-    max-width: 868px;
-    font-size: 16px;
-    font-weight: 400;
-    margin-bottom: 32px;
+  max-width: 868px;
+  margin: 0 auto 32px auto;
+  font-size: 16px;
+  font-weight: 400;
 }
 
+/* ------------------------------------
+   Button Styles
+------------------------------------ */
 .primary-btn {
-    background-color: #FF900E;
-    padding: 20px 25px;
-    margin-bottom: 50px;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-size: 20px;
-    font-weight: 600;
-    cursor: pointer;
+  background-color: #FF900E;
+  padding: 20px 25px;
+  margin-bottom: 50px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.primary-btn:hover {
+  background-color: #e5800c;
+}
+
+
+@media screen and (max-width: 576px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .banner {
+    padding: 0px;
+  }
+
+  .banner-title {
+    font-size: 36px;
+  }
+
+  .banner-description {
+    font-size: 14px;
+    padding: 0 20px;
+  }
+
+  .primary-btn {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .banner-content > img {
+    width: 95%;
+  }
+    
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 1024px) {
+  .navbar {
+    width: 90%;
+    padding: 10px 0;
+    margin: auto;
+  }
+
+  .menu {
+    gap: 15px;
+  }
+
+  .banner-title {
+    font-size: 48px;
+  }
+
+  .banner-description {
+    font-size: 16px;
+    padding: 0 40px;
+  }
+
+  .primary-btn {
+    padding: 15px 20px;
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .banner-content > img {
+    width: 90%;
+  }
+    
 }
