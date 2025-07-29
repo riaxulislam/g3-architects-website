@@ -108,6 +108,58 @@ body {
   background-color: #e5800c;
 }
 
+/* ------------------------------------
+   Features Section
+------------------------------------ */
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    max-width: 1440px;
+    gap: 73px;
+    padding: 80px 0;
+}
+
+.features-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+
+.features-title {
+    width: 468px;
+}
+.quick-list {
+    font-size: 45px;
+    font-weight: 500;
+    color: #727272;
+}
+
+.of-our {
+    font-size: 45px;
+    font-weight: 700;
+    color: black;
+}
+.fts {
+    font-size: 45px;
+    font-weight: 700;
+    color: #FF900E;
+}
+
+.features-description {
+    font-size: 16px;
+    font-weight: 400;
+    color: #727272;
+    margin: 20px 0;
+}
+
+
+/* ------------------------------------
+   Device Responsive Styles
+------------------------------------ */
 
 @media screen and (max-width: 576px) {
   .navbar {
@@ -177,3 +229,7 @@ body {
   }
     
 }
+
+/* ------------------------------------
+   The End CSS Styles
+------------------------------------ */
