@@ -149,6 +149,11 @@ body {
     color: #FF900E;
 }
 
+.features {
+    display: flex;
+    flex-direction: column;
+}
+
 .features-description {
     font-size: 16px;
     font-weight: 400;
@@ -195,6 +200,21 @@ body {
   .banner-content > img {
     width: 95%;
   }
+
+  .features {
+    gap: 10px;
+    padding: 30px 0;
+  }
+  .features-img {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+  .features-content {
+    width: 95%;
+    margin: 0;
+}
     
 }
 
@@ -227,6 +247,18 @@ body {
   .banner-content > img {
     width: 90%;
   }
+
+  .features {
+    gap: 15px;
+    padding: 50px 0;
+  }
+  .features-img {
+    gap: 10px;
+}
+
+  .features-content {
+    width: 90%;
+}
     
 }
 
