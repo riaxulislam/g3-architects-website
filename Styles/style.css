@@ -149,17 +149,96 @@ body {
     color: #FF900E;
 }
 
-.features {
-    display: flex;
-    flex-direction: column;
-}
-
 .features-description {
     font-size: 16px;
     font-weight: 400;
     color: #727272;
     margin: 20px 0;
 }
+
+/* ------------------------------------
+   Information Section Styles
+------------------------------------ */
+
+.information {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: auto;
+    gap: 145px;
+    padding-top: 70px;
+
+}
+
+.information-title {
+  border-left: 5px solid #FF900E;
+  padding-left: 20px;
+}
+
+.information-title > h2 {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.information-description {
+    font-size: 16px;
+    font-weight: 400;
+    color: #727272;
+    margin: 20px 0;
+}
+
+.info-item {
+  padding: 30px;
+  box-shadow: 2px 2px 10px 10px rgba(0, 0, 0, 0.03);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.info-item h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.info-item p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #727272;
+}
+
+.ftr-img {
+  position: relative;
+  z-index: 1;
+}
+
+.experience {
+  padding: 44px;
+  border-radius: 8px;
+  text-align: center;
+  gap: 20px;
+  background-color: #FF900E;
+  width: 342px;
+  margin-left: -92px;
+  margin-top: -100px;
+  position: relative;
+  z-index: 9;
+}
+
+.experience h4 {
+  font-size: 65px;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+.ex {
+  font-size: 25px;
+  font-weight: 500;
+  color: white;
+  margin: 0;
+}
+
+
 
 
 /* ------------------------------------
